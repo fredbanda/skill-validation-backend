@@ -1,24 +1,22 @@
-# README
+Prerequisites
+The setups steps expect following tools installed on the system.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Github
+Ruby 3.3.6
+Rails 8.0.0
+1. Check out the repository
+git clone git@github.com:organization/project-name.git
+2. Create database.yml file
+Copy the sample database.yml file and edit the database configuration as required.
 
-Things you may want to cover:
+cp config/database.yml.sample config/database.yml
+3. Create and setup the database
+Run the following commands to create and setup the database.
 
-* Ruby version
+bundle exec rake db:create
+bundle exec rake db:setup
+4. Start the Rails server
+You can start the rails server using the command given below.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+bundle exec rails s
+And now you can visit the site with the URL http://localhost:3000
