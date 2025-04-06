@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  created_at: 2025-03-29 10:15:30
+  image: MyString
+  number: MyString
+  company: one
+
+two:
+  created_at: 2025-03-29 10:15:30
+  image: MyString
+  number: MyString
+  company: two
