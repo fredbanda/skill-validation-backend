@@ -55,7 +55,8 @@ Rails.application.configure do
   # config.action_mailer.raise_delivery_errors = false
 
   # Set host to be used by links generated in mailer templates.
-  config.action_mailer.default_url_options = { host: "https://market-link-0czv.onrender.com" }
+  config.action_mailer.default_url_options = { host: "https://market-link-spew.onrender.com/" }
+
 
   # Specify outgoing SMTP server. Remember to add smtp/* credentials via rails credentials:edit.
   # config.action_mailer.smtp_settings = {
@@ -84,6 +85,6 @@ Rails.application.configure do
    #
    # Skip DNS rebinding protection for the default health check endpoint.
    # config.host_authorization = { exclude: ->(request) { request.path == "/up" } }
-   config.action_mailer.default_url_options = { host: "https://market-link-0czv.onrender.com/" }
-  Rails.application.routes.default_url_options[:host] = "https://market-link-0czv.onrender.com/"
+   config.action_mailer.default_url_options = { host: "https://market-link-spew.onrender.com" }
+  Rails.application.routes.default_url_options[:host] = "https://market-link-spew.onrender.com"
 end
