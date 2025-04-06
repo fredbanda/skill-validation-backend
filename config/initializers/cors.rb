@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins "https://market-link-0czv.onrender.com", "https://skill-validation-test.vercel.app"
+    origins "https://market-link-0czv.onrender.com", "https://skill-validation-test.vercel.app", "http://localhost:3001", "http://localhost:3000"
 
     resource "*",
       headers: :any,
