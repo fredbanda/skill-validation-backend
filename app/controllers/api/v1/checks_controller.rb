@@ -18,7 +18,7 @@ class Api::V1::ChecksController < ApplicationController
         id: @check.id,
         number: @check.number,
         image_url: @check.image.attached? ? url_for(@check.image) : nil
-      }, status: :created
+      }, status: :created, content_type: "application/json"
     else
       render json: { errors: @check.errors.full_messages }, status: :unprocessable_entity
     end

@@ -8,6 +8,6 @@ services:
     startCommand: bundle exec puma -C config/deploy/puma.rb
     envVars:
       - key: DATABASE_URL
-        value: "postgresql://rails_valid_db_owner:npg_wAXcumgqC69E@ep-sparkling-heart-a4rl690e-pooler.us-east-1.aws.neon.tech/rails_valid_db?sslmode=require"
+        value: "postgresql://rails_test_db_owner:npg_LZhwUICoF36X@ep-weathered-art-a4valqwi-pooler.us-east-1.aws.neon.tech/rails_test_db?sslmode=require"
       - key: RAILS_MASTER_KEY
         sync: false
