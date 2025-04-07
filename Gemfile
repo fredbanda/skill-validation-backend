@@ -57,3 +57,4 @@ end
 gem "dotenv", groups: [ :development, :test ]
 gem "active_model_serializers"
 gem "active_storage_validations"
+gem "cloudinary"
