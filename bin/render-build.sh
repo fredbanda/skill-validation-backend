@@ -2,10 +2,13 @@
 # exit on error
 set -o errexit
 
+echo "Installing gems..."
 bundle install
 
-# Generate migrations for SolidQueue if they don't exist
+echo "Generating SolidQueue migrations..."
 bundle exec rails generate solid_queue:install
 
-# Run migrations
-bundle exec rake db:migrate
+echo "Running database migrations..."
+bundle exec rails db:migrate
+
+echo "Build completed successfully!"
