@@ -3,5 +3,9 @@
 set -o errexit
 
 bundle install
-bundle exec rails solid_queue:install
+
+# Generate migrations for SolidQueue if they don't exist
+bundle exec rails generate solid_queue:install
+
+# Run migrations
 bundle exec rake db:migrate
