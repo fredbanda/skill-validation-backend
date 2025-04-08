@@ -11,3 +11,5 @@ services:
         value: "postgresql://rails_test_db_owner:npg_LZhwUICoF36X@ep-weathered-art-a4valqwi-pooler.us-east-1.aws.neon.tech/rails_test_db?sslmode=require"
       - key: RAILS_MASTER_KEY
         sync: false
+      - key: SOLID_QUEUE_IN_PUMA
+        value: "true"
